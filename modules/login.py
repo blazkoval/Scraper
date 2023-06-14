@@ -1,11 +1,8 @@
 import base64
-from asyncio import sleep
-from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 def login(driver):
-
     try:
         f = open("..\login.txt", "r")
         username = f.readline()
