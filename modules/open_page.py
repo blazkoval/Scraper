@@ -1,4 +1,5 @@
 def openPage(driver):
+    
     #otevření první stránky, abych mohla zapsat přihlášovací údaje
     pageurl = "https://apl.unob.cz/rozvrh"
     driver.get(pageurl)

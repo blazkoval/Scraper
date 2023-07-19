@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
 def openRozvrh(driver):
+    
     #elem = WebDriverWait(driver, timeout=3).until(lambda d: d.find_element(By.CLASS_NAME, "input-box")) #pouziva element class --> lepsi je xpath (originalni)
     elem = WebDriverWait(driver, timeout=3).until(lambda d: d.find_element(By.XPATH, "/html/body/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/input"))
     elem.clear()
