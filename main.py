@@ -25,6 +25,9 @@ potom celé políčko:
 
 potom jeden konrétní řádek
 """
+
+#sem připsat kód na vyprintování stránky
+
 #nadpis léto 2022/2023
 try:
     elem = WebDriverWait(driver, timeout=120).until(lambda d: d.find_element(By.XPATH,'/html/body/div/div/div[2]/div[1]/div[2]/button'))
@@ -36,29 +39,31 @@ except:
 #jedno políčko v rozvhru
 try:
     #elem = WebDriverWait(driver, timeout=120).until(lambda d: d.find_element(By.XPATH,'/html/body/div/div/div[2]/div[2]/div[2]/div[4]/div/svg/g/g[1]/g'))
-    elem = WebDriverWait(driver, timeout=10).until(lambda d: d.find_element(By.CLASS_NAME,'event-description'))
+    elem = WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.CLASS_NAME,'event-description'))
     print("Políčko nalezeno")
     print(elem.text)
 except:
     print("Políčko NEnalezeno")
 
-#jeden konkretní řádek v políčku - vyučující --> nefunguje
+#jeden konkretní řádek v políčku --> nefunguje
 try:
-    elem = WebDriverWait(driver, timeout=10).until(lambda d: d.find_element(By.CLASS_NAME,'text.event-text.who'))
+    elem = WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.CLASS_NAME,'text.event-text.who'))
     print("Řádek nalezen")
     print(elem.text)
 except:
     print("Řádek NEnalezen (1)")
 
-#jeden konkretní řádek v políčku - vyučující --> nefunguje
+#jeden konkretní řádek v políčku --> nefunguje
 try:
-    elem = WebDriverWait(driver, timeout=10).until(lambda d: d.find_element(By.CLASS_NAME,'event-text who'))
+    elem = WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.CLASS_NAME,'event-text who'))
     print("Řádek nalezen")
     print(elem.text)
 except:
     print("Řádek NEnalezen (2)")
 
-# source = driver.page_source
-# print(source)
+source = driver.page_source
+print(source)
 assert "No results found." not in driver.page_source
 driver.close()
+
+# stáhnout celou stránku - uložit do souboru
