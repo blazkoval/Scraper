@@ -739,3 +739,96 @@ WebDriver BiDi listening on ws://127.0.0.1:58413
 1689688388069	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 DevTools listening on ws://127.0.0.1:58413/devtools/browser/e9c62f17-95ee-4cb3-85f0-5cc1babec12e
 console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"
+1690441419471	geckodriver	INFO	Listening on 127.0.0.1:53426
+1690441422546	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53427" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofilexTiNtm"
+1690441452365	geckodriver	INFO	Listening on 127.0.0.1:53513
+1690441455411	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53514" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofiletHmxGq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690441456090	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690441456525	Marionette	INFO	Listening on port 53525
+WebDriver BiDi listening on ws://127.0.0.1:53514
+Read port: 53525
+1690441456949	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53514/devtools/browser/4176bf22-2860-4669-9cae-21803a965691
+console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"
+1690441481275	Marionette	INFO	Stopped listening on port 53525
+Dynamically enable window occlusion 1
+1690441520064	geckodriver	INFO	Listening on 127.0.0.1:53658
+1690441523133	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53659" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofileXZ5OAW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690441523916	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690441524578	Marionette	INFO	Listening on port 53666
+WebDriver BiDi listening on ws://127.0.0.1:53659
+Read port: 53666
+1690441525286	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53659/devtools/browser/5abffaf2-317c-4381-99aa-10f11f02ce4e
+console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://apl.unob.cz."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://apl.unob.cz."
+console.error: ({})
+console.error: ({})
+1690441817036	geckodriver	INFO	Listening on 127.0.0.1:54092
+1690441820110	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54093" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofile1Yt2z3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690441820903	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690441821352	Marionette	INFO	Listening on port 54100
+WebDriver BiDi listening on ws://127.0.0.1:54093
+Read port: 54100
+1690441821802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54093/devtools/browser/239fb345-0fdb-47c4-be42-79c2232b0354
+console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"
+1690442617867	geckodriver	INFO	Listening on 127.0.0.1:54271
+1690442620921	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54272" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofilegeYmLY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690442621461	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690442621885	Marionette	INFO	Listening on port 54279
+WebDriver BiDi listening on ws://127.0.0.1:54272
+Read port: 54279
+1690442622156	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54272/devtools/browser/4b0f1161-6b0e-4579-8b8c-06c7ec5c73e3
+console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"
+1690442665647	geckodriver	INFO	Listening on 127.0.0.1:54321
+1690442668698	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54322" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofilexs9sR3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690442669194	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690442669618	Marionette	INFO	Listening on port 54329
+WebDriver BiDi listening on ws://127.0.0.1:54322
+Read port: 54329
+1690442669966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54322/devtools/browser/00f186d4-2d82-4d4b-8d84-65719208072a
+console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"
+console.warn: "Listener for event 'frame' did not return a promise."
+1690442745839	geckodriver	INFO	Listening on 127.0.0.1:54379
+1690442748904	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54380" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofileBIzxWs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690442749428	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690442749802	Marionette	INFO	Listening on port 54387
+WebDriver BiDi listening on ws://127.0.0.1:54380
+Read port: 54387
+1690442750153	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54380/devtools/browser/09b422d5-fb42-40f1-b89d-61a6ed6054ee
+console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"
+1690442984467	geckodriver	INFO	Listening on 127.0.0.1:54436
+1690442987526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\blazk\\AppData\\Local\\Temp\\rust_mozprofileHz3Ffc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1690442988052	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1690442988445	Marionette	INFO	Listening on port 54444
+WebDriver BiDi listening on ws://127.0.0.1:54437
+Read port: 54444
+1690442988792	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54437/devtools/browser/9a8ea6b9-01a7-4c09-a7c1-f8ada8509efb
+console.warn: "nsPrompter: isThirdPartyURI failed: [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrincipal.isThirdPartyURI]\"  nsresult: \"0x80070057 (NS_ERROR_ILLEGAL_VALUE)\"  location: \"JS frame :: resource://gre/modules/Prompter.sys.mjs :: openPrompt :: line 1131\"  data: no]"

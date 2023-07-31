@@ -5,7 +5,9 @@ from selenium.webdriver.common.by import By
 from modules.login import *
 from modules.open_rozvrh import *
 from modules.open_page import *
-
+import uuid
+import json
+import re
 
 #driver = webdriver.Firefox()
 driver = webdriver.Chrome()
@@ -26,8 +28,6 @@ potom celé políčko:
 potom jeden konrétní řádek
 """
 
-#sem připsat kód na vyprintování stránky
-
 #nadpis léto 2022/2023
 try:
     elem = WebDriverWait(driver, timeout=120).until(lambda d: d.find_element(By.XPATH,'/html/body/div/div/div[2]/div[1]/div[2]/button'))
@@ -36,7 +36,6 @@ try:
 except:
     print("Nadpis NEnalezen")
 
-#jedno políčko v rozvhru
 try:
     #elem = WebDriverWait(driver, timeout=120).until(lambda d: d.find_element(By.XPATH,'/html/body/div/div/div[2]/div[2]/div[2]/div[4]/div/svg/g/g[1]/g'))
     elem = WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.CLASS_NAME,'event-description'))
@@ -62,7 +61,7 @@ except:
     print("Řádek NEnalezen (2)")
 
 source = driver.page_source
-print(source)
+# print(source)
 assert "No results found." not in driver.page_source
 driver.close()
 
