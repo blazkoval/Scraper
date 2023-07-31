@@ -5,64 +5,45 @@ from selenium.webdriver.common.by import By
 from modules.login import *
 from modules.open_rozvrh import *
 from modules.open_page import *
+from modules.download_rozvrh import *
+from modules.data_extraction import *
+
+
+from os import path
 import uuid
 import json
 import re
 
-#driver = webdriver.Firefox()
-driver = webdriver.Chrome()
+#změna defaultního adresáře pro stahování souborů
+options = webdriver.ChromeOptions()
+prefs = {"download.default_directory" : "C:\work\Stefek\Scraper"}
+options.add_experimental_option("prefs",prefs)
+driver = webdriver.Chrome(executable_path='./chromedriver',chrome_options=options)
+
 openPage(driver) 
-#assert "Python" in driver.title
 login(driver)
 driver.maximize_window()
 openRozvrh(driver)
+# try:
+#     elem = WebDriverWait(driver, timeout=180).until(lambda d: d.find_element(By.XPATH,'/html/body/div/div/div[2]/div[1]/div[2]/button'))
+#     print("rozvrh nacten")
+# except:
+#     print("rozvrh nenacten")
+downloadRozvrh(driver)
+dataExtraction()
 
-"""
-Zkouším vypsat informace z rozvrhu
-nejdříve nadpis léto 2022/2023
-
-potom celé políčko:
-    přes XPATH --> nefunguje (zakomentováno)
-    přes CLASS_NAME --> funguje
-
-potom jeden konrétní řádek
-"""
-
-#nadpis léto 2022/2023
-try:
-    elem = WebDriverWait(driver, timeout=120).until(lambda d: d.find_element(By.XPATH,'/html/body/div/div/div[2]/div[1]/div[2]/button'))
-    print("Nadpis nalezen")
-    print(elem.text)
-except:
-    print("Nadpis NEnalezen")
-
-try:
-    #elem = WebDriverWait(driver, timeout=120).until(lambda d: d.find_element(By.XPATH,'/html/body/div/div/div[2]/div[2]/div[2]/div[4]/div/svg/g/g[1]/g'))
-    elem = WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.CLASS_NAME,'event-description'))
-    print("Políčko nalezeno")
-    print(elem.text)
-except:
-    print("Políčko NEnalezeno")
-
-#jeden konkretní řádek v políčku --> nefunguje
-try:
-    elem = WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.CLASS_NAME,'text.event-text.who'))
-    print("Řádek nalezen")
-    print(elem.text)
-except:
-    print("Řádek NEnalezen (1)")
-
-#jeden konkretní řádek v políčku --> nefunguje
-try:
-    elem = WebDriverWait(driver, timeout=5).until(lambda d: d.find_element(By.CLASS_NAME,'event-text who'))
-    print("Řádek nalezen")
-    print(elem.text)
-except:
-    print("Řádek NEnalezen (2)")
-
-source = driver.page_source
+# source = driver.page_source
 # print(source)
 assert "No results found." not in driver.page_source
 driver.close()
 
-# stáhnout celou stránku - uložit do souboru
+# 'events': [
+#     {
+#         'id': "45b2df80-ae0f-11ed-9bd8-0242ac110002" , 'name': 'Zkouška', 'name_en': 'Exam', 
+#         'eventtype_id': 'b87d3ff0-8fd4-11ed-a6d4-0242ac110002',
+#         'startdate': datetime.datetime(year=2022, month=11, day=2, hour=8, minute=0), 
+#         'enddate': datetime.datetime(year=2022, month=11, day=2, hour=10, minute=0)
+#     }
+
+# 'eventtypes' : [
+#       {'id': "c0a12392-ae0e-11ed-9bd8-0242ac110002" , 'name': 'P', 'name_en': ''},

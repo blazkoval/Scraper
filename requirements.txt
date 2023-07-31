@@ -1,2 +1,4 @@
 selenium
 base64
+os
+uuid
