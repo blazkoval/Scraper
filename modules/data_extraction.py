@@ -13,31 +13,31 @@ def dataExtraction():
         
         i = 0
         for row in csv_reader:
-            eventtype = {}    
-            event = {}
-            eType = ''
-            if(i>0):
-                if (row[4]==''):
-                    eType = 'Jiná událost'
-                else: eType = row[4]
+            if (len(row)>1):
+                eventtype = {}    
+                event = {}
+                eType = ''
+                if(i>0):
+                    if (row[4]==''):
+                        eType = 'Jiná událost'
+                    else: eType = row[4]
 
-                if (checkEventtype(eType) == "0"):
-                    eventtype["ID"] = str(uuid.uuid1())
-                    eventtype["name"] = eType
-                    eventtypes.append(eventtype)
+                    if (checkEventtype(eType) == "0"):
+                        eventtype["ID"] = str(uuid.uuid1())
+                        eventtype["name"] = eType
+                        eventtypes.append(eventtype)
 
-                event["ID"] = str(uuid.uuid1())
-                event["name"] = row[5]
-                event["eventtype_id"] = checkEventtype(eType)
-                event["startdate"] = str(convertDateTime(row[0],row[1]))
-                event["enddate"] = str(convertDateTime(row[0],row[2]))
+                    event["ID"] = str(uuid.uuid1())
+                    event["name"] = row[5]
+                    event["eventtype_id"] = checkEventtype(eType)
+                    event["startdate"] = str(convertDateTime(row[0],row[1]))
+                    event["enddate"] = str(convertDateTime(row[0],row[2]))
 
-                events.append(event)
-
+                    events.append(event)
 
             i+=1
-            if(i>3499):
-                break
+            # if(i>3500):
+            #     break
     
     makeJson()
 
@@ -67,8 +67,8 @@ def makeJson():
     data["events"] = events
     data["eventypes"] = eventtypes
 
-    with open("scrapedData.json", "w", encoding="utf-8") as out_file:
-        json.dump(data, out_file, indent = 4, ensure_ascii = False)   
+    with open("exctractedData.json", "w", encoding="utf-8") as out_file:
+        json.dump(data, out_file, indent = 4, ensure_ascii = False) 
 
 # 'events': [
 #     {
@@ -81,4 +81,3 @@ def makeJson():
 # 'eventtypes' : [
 #       {'id': "c0a12392-ae0e-11ed-9bd8-0242ac110002" , 'name': 'P', 'name_en': ''},
 
-print(eventtypes) 
